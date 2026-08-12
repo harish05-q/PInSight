@@ -1,0 +1,34 @@
+.card {
+  background-color: var(--bg-surface-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-2); /* The specs say surface-1 has 1px border. Wait, shadow is surface-2. Let's make it simple */
+}
+
+/* Let's follow elevation rules from SRS */
+.elevation1 {
+  background-color: var(--bg-surface-1);
+  border: 1px solid var(--border-strong);
+}
+
+.elevation2 {
+  background-color: var(--bg-surface-2);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-2);
+}
+
+.header {
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.title {
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--text-headings);
+}
+
+.content {
+  padding: var(--space-6);
+}

@@ -1,0 +1,126 @@
+.shell {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-app);
+}
+
+.sidebar {
+  width: 240px;
+  background-color: var(--bg-sidebar);
+  border-right: 1px solid var(--border-strong);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: width var(--ease-micro);
+}
+
+.sidebarCollapsed {
+  width: 64px;
+}
+
+.logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-4);
+  font-size: var(--text-md);
+  font-weight: 500;
+  color: var(--sage-700);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.logoCollapsed {
+  justify-content: center;
+}
+
+.nav {
+  flex: 1;
+  padding: var(--space-4) var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  transition: all var(--ease-micro);
+}
+
+.navItem:hover {
+  background-color: var(--wood-50);
+  color: var(--wood-900);
+}
+
+.navItemActive {
+  background-color: var(--sage-50);
+  color: var(--sage-900);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Important for flex child truncation */
+}
+
+.header {
+  height: 60px;
+  background-color: var(--bg-surface-1);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-6);
+  flex-shrink: 0;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.breadcrumb {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.searchBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--bg-app);
+  border: 1px solid var(--border-strong);
+  padding: var(--space-1) var(--space-3);
+  border-radius: 6px;
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  cursor: pointer;
+}
+
+.searchBtn:hover {
+  border-color: var(--sage-500);
+  color: var(--text-primary);
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-6);
+}

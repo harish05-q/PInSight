@@ -1,0 +1,30 @@
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-12) var(--space-6);
+  text-align: center;
+  background-color: var(--bg-surface-1);
+  border: 1px dashed var(--border-strong);
+  border-radius: 8px;
+  gap: var(--space-4);
+}
+
+.iconWrapper {
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.title {
+  font-size: var(--text-md);
+  font-weight: 500;
+  color: var(--text-headings);
+  margin-bottom: var(--space-1);
+}
+
+.description {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  max-width: 400px;
+}

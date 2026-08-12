@@ -1,0 +1,96 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(36, 31, 22, 0.4);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.palette {
+  background-color: var(--bg-surface-2);
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-2);
+  border: 1px solid var(--border-strong);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchHeader {
+  display: flex;
+  align-items: center;
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--border-subtle);
+  gap: var(--space-3);
+}
+
+.searchInput {
+  flex: 1;
+  background: none;
+  border: none;
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: var(--text-muted);
+}
+
+.results {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: var(--space-2);
+}
+
+.resultItem {
+  padding: var(--space-3) var(--space-4);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.resultItem:hover {
+  background-color: var(--bg-sidebar);
+}
+
+.resultTitle {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-headings);
+}
+
+.resultDesc {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.emptyState {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}
+
+.keyboardHints {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--bg-sidebar);
+  border-top: 1px solid var(--border-subtle);
+  font-size: 10px;
+  color: var(--text-muted);
+  gap: var(--space-4);
+}

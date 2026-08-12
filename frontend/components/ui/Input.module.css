@@ -1,0 +1,35 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.label {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.input {
+  height: 36px;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  background-color: var(--bg-surface-1);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  transition: all var(--ease-micro);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--sage-500);
+  box-shadow: 0 0 0 1px var(--sage-500);
+}
+
+.input:disabled {
+  background-color: var(--bg-sidebar);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
